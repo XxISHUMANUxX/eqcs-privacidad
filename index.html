@@ -23,7 +23,7 @@
 <!-- ═════════════════════════════ ESPAÑOL ═════════════════════════════ -->
 <section id="es" lang="es">
 <h1>Política de privacidad de EQCS</h1>
-<p class="meta">Última actualización: 23 de octubre de 2026 · Responsable: Ismael Maldonado · Contacto: ishumanu1661@gmail.com</p>
+<p class="meta">Última actualización: 28 de octubre de 2026 · Responsable: Ismael Maldonado · Contacto: ishumanu1661@gmail.com</p>
 
 <p class="box"><strong>En resumen:</strong> EQCS no recoge, no envía y no comparte ningún dato personal. Funciona sin conexión: la app ni siquiera solicita el permiso de internet. Todo lo que guarda se queda en tu teléfono.</p>
 
@@ -32,16 +32,18 @@
   <li>Tus presets de ecualizador y compresor y los ajustes de la app.</li>
   <li>Los resultados del test auditivo, si decides hacerlo.</li>
   <li>Estimaciones de tu escucha diaria (nivel aproximado y tiempo de reproducción) para el dosímetro y sus avisos.</li>
-  <li>Estadísticas agregadas del carácter del audio (por ejemplo, si predominan los graves) para sugerirte ajustes. La app no lee ni guarda el título, el artista ni el contenido de lo que escuchas.</li>
+  <li>Estadísticas agregadas del carácter del audio (por ejemplo, si predominan los graves) para sugerirte ajustes. Se calculan en el momento a partir de la señal que reproduce el teléfono; el audio en sí no se guarda, y la app no lee ni guarda el título, el artista ni el contenido de lo que escuchas.</li>
   <li>El nombre y la dirección de los auriculares o dispositivos de audio que conectas, para aplicar automáticamente el preset que les asignaste.</li>
 </ul>
 
 <h2>2. Permisos y para qué se usan</h2>
+<p>EQCS te explica para qué sirve cada permiso antes de que Android te lo pregunte, al abrir la app por primera vez o al activar la función que lo necesita. Puedes aceptar o rechazar cada uno y cambiarlo cuando quieras en Ajustes de Android → Aplicaciones → EQCS → Permisos. Si rechazas alguno, la app sigue funcionando: solo se desactiva la función que lo necesita.</p>
 <ul>
-  <li><strong>Micrófono (RECORD_AUDIO):</strong> Android lo exige para leer la señal de audio que muestra el analizador de espectro. EQCS no graba, no guarda, no envía audio y no usa el micrófono para captar tu entorno.</li>
-  <li><strong>Notificaciones, servicio en primer plano y mantener activo el procesador:</strong> mostrar la notificación del motor (con su botón «Detener») y mantener el ecualizador activo mientras suena el audio.</li>
-  <li><strong>Dispositivos Bluetooth cercanos:</strong> saber qué auriculares se conectan para aplicar su preset.</li>
+  <li><strong>Análisis de audio (Android lo llama «grabar audio» o micrófono, RECORD_AUDIO):</strong> es el permiso que Android exige para medir el sonido que reproduce el propio teléfono. EQCS lo usa para el analizador de espectro, el compresor en vivo, la optimización inteligente (escucha unos 30 segundos de lo que suena para sugerir un ajuste) y el modo universal. EQCS no usa el micrófono para captar tu entorno y no graba, guarda ni envía audio: solo calcula al momento niveles y espectros de la señal que reproduce el teléfono.</li>
+  <li><strong>Notificaciones, servicio en primer plano y mantener activo el procesador:</strong> mostrar la notificación del motor (con su botón «Detener»), enviarte los avisos de escucha y mantener el ecualizador activo mientras suena el audio. En Android 13 o superior, Android te pregunta por el permiso de notificaciones.</li>
+  <li><strong>Dispositivos Bluetooth cercanos:</strong> saber qué auriculares se conectan para aplicar su preset. En Android 12 o superior Android lo muestra como «Dispositivos cercanos».</li>
   <li><strong>Ajustes de audio:</strong> aplicar los efectos de ecualización y compresión de Android.</li>
+  <li><strong>Modo universal (opcional):</strong> aplica el ecualizador a toda la salida de audio del teléfono, de cualquier app, en lugar de a un reproductor concreto. No necesita permisos adicionales y el procesamiento ocurre en tu teléfono.</li>
   <li><strong>Modo avanzado (opcional, DUMP / Shizuku):</strong> solo si tú lo concedes mediante ADB o Shizuku. Permite localizar la sesión de audio de reproductores que no la anuncian. La app funciona sin él.</li>
   <li><strong>Sensores del teléfono:</strong> si activas la compensación barométrica, se lee la presión atmosférica del sensor del teléfono, solo para ajustar el sonido en el propio dispositivo.</li>
 </ul>
@@ -76,7 +78,7 @@
 <!-- ═════════════════════════════ ENGLISH ═════════════════════════════ -->
 <section id="en" lang="en">
 <h1>EQCS Privacy Policy</h1>
-<p class="meta">Last updated: October 23, 2026 · Controller: Ismael Maldonado · Contact: ishumanu1661@gmail.com</p>
+<p class="meta">Last updated: October 28, 2026 · Controller: Ismael Maldonado · Contact: ishumanu1661@gmail.com</p>
 
 <p class="box"><strong>In short:</strong> EQCS does not collect, send or share any personal data. It works offline: the app does not even request the internet permission. Everything it stores stays on your phone.</p>
 
@@ -85,16 +87,18 @@
   <li>Your equalizer and compressor presets and the app settings.</li>
   <li>Hearing test results, if you choose to take the test.</li>
   <li>Estimates of your daily listening (approximate level and playback time) for the dose meter and its alerts.</li>
-  <li>Aggregate statistics about the character of the audio (for example, whether bass dominates) to suggest adjustments. The app does not read or store the title, artist or content of what you listen to.</li>
+  <li>Aggregate statistics about the character of the audio (for example, whether bass dominates) to suggest adjustments. They are computed on the spot from the signal your phone plays; the audio itself is not stored, and the app does not read or store the title, artist or content of what you listen to.</li>
   <li>The name and address of the headphones or audio devices you connect, to automatically apply the preset you assigned to them.</li>
 </ul>
 
 <h2>2. Permissions and what they are for</h2>
+<p>EQCS explains what each permission is for before Android asks you, when you first open the app or when you turn on the feature that needs it. You can accept or decline each one and change it at any time in Android Settings → Apps → EQCS → Permissions. If you decline one, the app keeps working: only the feature that needs it is turned off.</p>
 <ul>
-  <li><strong>Microphone (RECORD_AUDIO):</strong> Android requires it to read the audio signal shown by the spectrum analyzer. EQCS does not record, store or send audio, and does not use the microphone to listen to your surroundings.</li>
-  <li><strong>Notifications, foreground service and keeping the processor awake:</strong> show the engine notification (with its “Stop” button) and keep the equalizer active while audio plays.</li>
-  <li><strong>Nearby Bluetooth devices:</strong> detect which headphones connect so their preset can be applied.</li>
+  <li><strong>Audio analysis (Android calls it “record audio” or microphone, RECORD_AUDIO):</strong> the permission Android requires to measure the sound your phone itself plays. EQCS uses it for the spectrum analyzer, the live compressor, smart optimization (it listens to about 30 seconds of what is playing to suggest an adjustment) and universal mode. EQCS does not use the microphone to listen to your surroundings and does not record, store or send audio: it only computes levels and spectra, on the spot, from the signal your phone plays.</li>
+  <li><strong>Notifications, foreground service and keeping the processor awake:</strong> show the engine notification (with its “Stop” button), send you the listening alerts and keep the equalizer active while audio plays. On Android 13 or later, Android asks you for the notifications permission.</li>
+  <li><strong>Nearby Bluetooth devices:</strong> detect which headphones connect so their preset can be applied. On Android 12 or later Android shows it as “Nearby devices”.</li>
   <li><strong>Audio settings:</strong> apply Android’s equalization and compression effects.</li>
+  <li><strong>Universal mode (optional):</strong> applies the equalizer to the phone’s whole audio output, from any app, instead of to one specific player. It needs no additional permissions and the processing happens on your phone.</li>
   <li><strong>Advanced mode (optional, DUMP / Shizuku):</strong> only if you grant it through ADB or Shizuku. It lets the app find the audio session of players that do not announce it. The app works without it.</li>
   <li><strong>Phone sensors:</strong> if you turn on barometric compensation, atmospheric pressure is read from the phone’s sensor solely to adjust the sound on the device itself.</li>
 </ul>
