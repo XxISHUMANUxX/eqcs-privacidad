@@ -23,7 +23,7 @@
 <!-- ═════════════════════════════ ESPAÑOL ═════════════════════════════ -->
 <section id="es" lang="es">
 <h1>Política de privacidad de EQCS</h1>
-<p class="meta">Última actualización: 28 de octubre de 2026 · Responsable: Ismael Maldonado · Contacto: ishumanu1661@gmail.com</p>
+<p class="meta">Última actualización: 4 de noviembre de 2026 · Responsable: Ismael Maldonado · Contacto: ishumanu1661@gmail.com</p>
 
 <p class="box"><strong>En resumen:</strong> EQCS no recoge, no envía y no comparte ningún dato personal. Funciona sin conexión: la app ni siquiera solicita el permiso de internet. Todo lo que guarda se queda en tu teléfono.</p>
 
@@ -33,15 +33,15 @@
   <li>Los resultados del test auditivo, si decides hacerlo.</li>
   <li>Estimaciones de tu escucha diaria (nivel aproximado y tiempo de reproducción) para el dosímetro y sus avisos.</li>
   <li>Estadísticas agregadas del carácter del audio (por ejemplo, si predominan los graves) para sugerirte ajustes. Se calculan en el momento a partir de la señal que reproduce el teléfono; el audio en sí no se guarda, y la app no lee ni guarda el título, el artista ni el contenido de lo que escuchas.</li>
-  <li>El nombre y la dirección de los auriculares o dispositivos de audio que conectas, para aplicar automáticamente el preset que les asignaste.</li>
+  <li>Un identificador de los auriculares o dispositivos de audio que conectas (su nombre y parte de su dirección Bluetooth) y, si calibras alguno, el modelo de calibración que elegiste, si está activada y cuándo se conectó por última vez, para reconocerlo y aplicarle su calibración.</li>
 </ul>
 
 <h2>2. Permisos y para qué se usan</h2>
 <p>EQCS te explica para qué sirve cada permiso antes de que Android te lo pregunte, al abrir la app por primera vez o al activar la función que lo necesita. Puedes aceptar o rechazar cada uno y cambiarlo cuando quieras en Ajustes de Android → Aplicaciones → EQCS → Permisos. Si rechazas alguno, la app sigue funcionando: solo se desactiva la función que lo necesita.</p>
 <ul>
-  <li><strong>Análisis de audio (Android lo llama «grabar audio» o micrófono, RECORD_AUDIO):</strong> es el permiso que Android exige para medir el sonido que reproduce el propio teléfono. EQCS lo usa para el analizador de espectro, el compresor en vivo, la optimización inteligente (escucha unos 30 segundos de lo que suena para sugerir un ajuste) y el modo universal. EQCS no usa el micrófono para captar tu entorno y no graba, guarda ni envía audio: solo calcula al momento niveles y espectros de la señal que reproduce el teléfono.</li>
+  <li><strong>Análisis de audio (Android lo llama «grabar audio» o micrófono, RECORD_AUDIO):</strong> es el permiso que Android exige para medir el sonido que reproduce el propio teléfono. EQCS lo usa para el analizador de espectro, el compresor en vivo, la optimización inteligente (escucha unos 45 segundos de lo que suena para sugerir un ajuste) y el modo universal. EQCS no usa el micrófono para captar tu entorno y no graba, guarda ni envía audio: solo calcula al momento niveles y espectros de la señal que reproduce el teléfono.</li>
   <li><strong>Notificaciones, servicio en primer plano y mantener activo el procesador:</strong> mostrar la notificación del motor (con su botón «Detener»), enviarte los avisos de escucha y mantener el ecualizador activo mientras suena el audio. En Android 13 o superior, Android te pregunta por el permiso de notificaciones.</li>
-  <li><strong>Dispositivos Bluetooth cercanos:</strong> saber qué auriculares se conectan para aplicar su preset. En Android 12 o superior Android lo muestra como «Dispositivos cercanos».</li>
+  <li><strong>Dispositivos Bluetooth cercanos:</strong> saber qué auriculares se conectan para reconocerlos, ofrecerte calibrarlos y aplicarles la calibración que elegiste. En Android 12 o superior Android lo muestra como «Dispositivos cercanos»; en Android 11 o anterior es un permiso de instalación que Android no pregunta.</li>
   <li><strong>Ajustes de audio:</strong> aplicar los efectos de ecualización y compresión de Android.</li>
   <li><strong>Modo universal (opcional):</strong> aplica el ecualizador a toda la salida de audio del teléfono, de cualquier app, en lugar de a un reproductor concreto. No necesita permisos adicionales y el procesamiento ocurre en tu teléfono.</li>
   <li><strong>Modo avanzado (opcional, DUMP / Shizuku):</strong> solo si tú lo concedes mediante ADB o Shizuku. Permite localizar la sesión de audio de reproductores que no la anuncian. La app funciona sin él.</li>
@@ -49,13 +49,13 @@
 </ul>
 
 <h2>3. Compartir</h2>
-<p>Solo ocurre cuando tú lo pides. Al compartir un preset se genera un enlace o archivo con el nombre y la curva del preset, que envías tú a quien elijas con el menú de compartir de Android. No incluye datos de salud ni de escucha.</p>
+<p>Solo ocurre cuando tú lo pides. Al compartir un preset se genera un archivo (.eqcs) con el nombre y los ajustes de sonido del preset, que envías tú a quien elijas con el menú de compartir de Android. No incluye datos de salud ni de escucha. Si abres un archivo .eqcs que te enviaron, EQCS lo lee en tu teléfono para ofrecerte importarlo; no se envía a ningún sitio.</p>
 
 <h2>4. Copias de seguridad de Android</h2>
-<p>Si tienes activadas las copias de seguridad de Google, Android puede incluir los datos de la app (presets, ajustes y, si los hiciste, resultados del test) en tu propia cuenta de Google. Lo gestionan Android y Google, no EQCS, y puedes desactivarlo en los ajustes de Android.</p>
+<p>Si tienes activadas las copias de seguridad de Google, Android puede incluir los datos de la app (presets, ajustes, las calibraciones que elegiste y, si los hiciste, resultados del test) en tu propia cuenta de Google. Lo gestionan Android y Google, no EQCS, y puedes desactivarlo en los ajustes de Android.</p>
 
 <h2>5. Terceros</h2>
-<p>EQCS no incluye publicidad, analítica, herramientas de seguimiento ni servicios de terceros que recojan datos.</p>
+<p>EQCS no incluye publicidad, analítica, herramientas de seguimiento ni servicios de terceros que recojan datos. Las calibraciones de auriculares proceden de los proyectos abiertos AutoEq (licencia MIT) y OPRA (CC BY-SA 4.0) y viajan dentro de la app: se consultan sin conexión y no implican ningún envío de datos.</p>
 
 <h2>6. Salud</h2>
 <p>EQCS no es un producto sanitario. El test auditivo es una herramienta orientativa de cribado, no un diagnóstico, y el dosímetro es una estimación basada en el volumen y el tiempo de reproducción, no una medición calibrada. Ante cualquier duda sobre tu audición, consulta a un audiólogo.</p>
@@ -78,7 +78,7 @@
 <!-- ═════════════════════════════ ENGLISH ═════════════════════════════ -->
 <section id="en" lang="en">
 <h1>EQCS Privacy Policy</h1>
-<p class="meta">Last updated: October 28, 2026 · Controller: Ismael Maldonado · Contact: ishumanu1661@gmail.com</p>
+<p class="meta">Last updated: November 4, 2026 · Controller: Ismael Maldonado · Contact: ishumanu1661@gmail.com</p>
 
 <p class="box"><strong>In short:</strong> EQCS does not collect, send or share any personal data. It works offline: the app does not even request the internet permission. Everything it stores stays on your phone.</p>
 
@@ -88,15 +88,15 @@
   <li>Hearing test results, if you choose to take the test.</li>
   <li>Estimates of your daily listening (approximate level and playback time) for the dose meter and its alerts.</li>
   <li>Aggregate statistics about the character of the audio (for example, whether bass dominates) to suggest adjustments. They are computed on the spot from the signal your phone plays; the audio itself is not stored, and the app does not read or store the title, artist or content of what you listen to.</li>
-  <li>The name and address of the headphones or audio devices you connect, to automatically apply the preset you assigned to them.</li>
+  <li>An identifier of the headphones or audio devices you connect (their name and part of their Bluetooth address) and, if you calibrate one, the calibration model you chose, whether it is on and when it last connected, to recognize it and apply its calibration.</li>
 </ul>
 
 <h2>2. Permissions and what they are for</h2>
 <p>EQCS explains what each permission is for before Android asks you, when you first open the app or when you turn on the feature that needs it. You can accept or decline each one and change it at any time in Android Settings → Apps → EQCS → Permissions. If you decline one, the app keeps working: only the feature that needs it is turned off.</p>
 <ul>
-  <li><strong>Audio analysis (Android calls it “record audio” or microphone, RECORD_AUDIO):</strong> the permission Android requires to measure the sound your phone itself plays. EQCS uses it for the spectrum analyzer, the live compressor, smart optimization (it listens to about 30 seconds of what is playing to suggest an adjustment) and universal mode. EQCS does not use the microphone to listen to your surroundings and does not record, store or send audio: it only computes levels and spectra, on the spot, from the signal your phone plays.</li>
+  <li><strong>Audio analysis (Android calls it “record audio” or microphone, RECORD_AUDIO):</strong> the permission Android requires to measure the sound your phone itself plays. EQCS uses it for the spectrum analyzer, the live compressor, smart optimization (it listens to about 45 seconds of what is playing to suggest an adjustment) and universal mode. EQCS does not use the microphone to listen to your surroundings and does not record, store or send audio: it only computes levels and spectra, on the spot, from the signal your phone plays.</li>
   <li><strong>Notifications, foreground service and keeping the processor awake:</strong> show the engine notification (with its “Stop” button), send you the listening alerts and keep the equalizer active while audio plays. On Android 13 or later, Android asks you for the notifications permission.</li>
-  <li><strong>Nearby Bluetooth devices:</strong> detect which headphones connect so their preset can be applied. On Android 12 or later Android shows it as “Nearby devices”.</li>
+  <li><strong>Nearby Bluetooth devices:</strong> detect which headphones connect so they can be recognized, offered for calibration and given the calibration you chose. On Android 12 or later Android shows it as “Nearby devices”; on Android 11 or earlier it is an install-time permission that Android does not ask about.</li>
   <li><strong>Audio settings:</strong> apply Android’s equalization and compression effects.</li>
   <li><strong>Universal mode (optional):</strong> applies the equalizer to the phone’s whole audio output, from any app, instead of to one specific player. It needs no additional permissions and the processing happens on your phone.</li>
   <li><strong>Advanced mode (optional, DUMP / Shizuku):</strong> only if you grant it through ADB or Shizuku. It lets the app find the audio session of players that do not announce it. The app works without it.</li>
@@ -104,13 +104,13 @@
 </ul>
 
 <h2>3. Sharing</h2>
-<p>Only when you ask for it. Sharing a preset creates a link or file with the preset’s name and curve, which you send to whoever you choose using Android’s share menu. It contains no health or listening data.</p>
+<p>Only when you ask for it. Sharing a preset creates a file (.eqcs) with the preset’s name and sound settings, which you send to whoever you choose using Android’s share menu. It contains no health or listening data. If you open an .eqcs file someone sent you, EQCS reads it on your phone to offer to import it; nothing is sent anywhere.</p>
 
 <h2>4. Android backups</h2>
-<p>If Google backups are enabled on your phone, Android may include the app’s data (presets, settings and, if you took it, hearing test results) in your own Google account. This is handled by Android and Google, not by EQCS, and you can turn it off in Android settings.</p>
+<p>If Google backups are enabled on your phone, Android may include the app’s data (presets, settings, the calibrations you chose and, if you took it, hearing test results) in your own Google account. This is handled by Android and Google, not by EQCS, and you can turn it off in Android settings.</p>
 
 <h2>5. Third parties</h2>
-<p>EQCS includes no advertising, analytics, tracking tools or third-party services that collect data.</p>
+<p>EQCS includes no advertising, analytics, tracking tools or third-party services that collect data. Headphone calibrations come from the open projects AutoEq (MIT license) and OPRA (CC BY-SA 4.0) and ship inside the app: they are looked up offline and involve no data being sent.</p>
 
 <h2>6. Health</h2>
 <p>EQCS is not a medical device. The hearing test is an indicative screening tool, not a diagnosis, and the dose meter is an estimate based on volume and playback time, not a calibrated measurement. If you have any concern about your hearing, see an audiologist.</p>
